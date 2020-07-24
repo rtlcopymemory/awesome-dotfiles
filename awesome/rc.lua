@@ -15,6 +15,9 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
+local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
+local battery_widget = require("battery-widget")
+local BAT0 = battery_widget { adapter = "BAT0", ac = "AC" }
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -216,6 +219,8 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
+	    BAT0,
+	    brightness_widget(),
 	    volumebar_widget({
                 main_color = '#af13f7',
 		mute_color = '#bafc97',
@@ -246,7 +251,11 @@ globalkeys = gears.table.join(
 	awful.key({}, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer -D pulse sset Master 2%+", false) end),
 	awful.key({}, "XF86AudioLowerVolume", function () awful.util.spawn("amixer -D pulse sset Master 2%-", false) end),
 	awful.key({}, "XF86AudioMute", function () awful.util.spawn("amixer -D pulse sset Master toggle", false) end),
+	-- brightness
+	awful.key({ }, "XF86MonBrightnessUp", function () awful.spawn("light -A 5") end, {description = "increase brightness", group = "custom"}),
+	awful.key({ }, "XF86MonBrightnessDown", function () awful.spawn("light -U 5") end, {description = "decrease brightness", group = "custom"}),
 
+	-- defaults
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
