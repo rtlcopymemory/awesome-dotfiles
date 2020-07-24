@@ -14,3 +14,5 @@
 
 ### Todo
 - Use `urxvt` instead of `xfce4-terminal`
+- Rofi + Rofi shortcut
+- Battery indicator
