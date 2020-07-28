@@ -529,7 +529,7 @@ awful.rules.rules = {
 	{ rule = { class = "Brave" },
     		properties = { screen = 1, tag = "www" }
 	},
-	{ rule = { class = "Xfce4-terminal" },
+	{ rule = { class = "Alacritty" },
     		properties = { screen = 1, tag = "Term" }
 	},
 
