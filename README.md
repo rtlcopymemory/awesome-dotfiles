@@ -11,6 +11,7 @@
 - streetturtle brightness widget
 - deficient battery widget
 - Arc icons
+- Alacritty
 
 ### Credits
 - For the volume widget: https://github.com/streetturtle/awesome-wm-widgets/tree/master/volumebar-widget
