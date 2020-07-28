@@ -2,7 +2,7 @@
 ## Personal Dotfiles for AwesomeWM config
 ### Dependencies
 - awesomewm 4 (or later)
-- compton
+- picom
 - xfce4-goodies
 - pulseaudio
 - alsa
@@ -20,7 +20,7 @@
 - Arc icons: https://github.com/horst3180/arc-icon-theme
 
 ### Todo
-- Use `urxvt` instead of `xfce4-terminal`
+- Use `alacritty` instead of `xfce4-terminal`
 - Rofi + Rofi shortcut
 - ~~Battery indicator~~
 - ~~Brightness~~
