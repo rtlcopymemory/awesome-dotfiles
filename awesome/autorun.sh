@@ -8,4 +8,4 @@ function run {
 }
 
 # Add "run <program> <arguments>" for autostart
-run picom -b
+run compton -b
