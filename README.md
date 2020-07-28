@@ -2,7 +2,7 @@
 ## Personal Dotfiles for AwesomeWM config
 ### Dependencies
 - awesomewm 4 (or later)
-- picom
+- compton
 - xfce4-goodies
 - pulseaudio
 - alsa
