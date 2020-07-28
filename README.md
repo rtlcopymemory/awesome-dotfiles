@@ -3,7 +3,6 @@
 ### Dependencies
 - awesomewm 4 (or later)
 - picom
-- xfce4-goodies
 - pulseaudio
 - alsa
 - acpi
