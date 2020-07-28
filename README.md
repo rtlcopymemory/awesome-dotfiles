@@ -3,7 +3,6 @@
 ### Dependencies
 - awesomewm 4 (or later)
 - picom
-- xfce4-goodies
 - pulseaudio
 - alsa
 - acpi
@@ -20,7 +19,7 @@
 - Arc icons: https://github.com/horst3180/arc-icon-theme
 
 ### Todo
-- Use `alacritty` instead of `xfce4-terminal`
+- ~~Use `alacritty` instead of `xfce4-terminal`~~
 - Rofi + Rofi shortcut
 - ~~Battery indicator~~
 - ~~Brightness~~
