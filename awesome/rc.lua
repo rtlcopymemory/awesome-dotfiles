@@ -14,9 +14,9 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
-local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
-local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
-local battery_widget = require("battery-widget")
+local volumebar_widget = require("volume-widget.volumebar")
+local brightness_widget = require("brightness-widget.brightness")
+local battery_widget = require("battery-widget.battery-widget")
 local BAT0 = battery_widget { adapter = "BAT0", ac = "AC" }
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
