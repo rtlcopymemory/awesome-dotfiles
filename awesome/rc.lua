@@ -17,7 +17,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 local volumebar_widget = require("volume-widget.volumebar")
 local brightness_widget = require("brightness-widget.brightness")
 local battery_widget = require("battery-widget.battery-widget")
-local BAT0 = battery_widget { adapter = "BAT0", ac = "AC" }
+local BAT0 = battery_widget { adapter = "BAT1", ac = "AC" } -- found in /sys/class/power_supply
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -204,7 +204,7 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "top", screen = s, opacity=0.8, height=24 })
 
     -- Add widgets to the wibox
     s.mywibox:setup {

@@ -5,7 +5,7 @@
 - picom
 - pulseaudio
 - alsa
-- acpi
+- acpid
 - streetturtle volume widget
 - streetturtle brightness widget
 - deficient battery widget
