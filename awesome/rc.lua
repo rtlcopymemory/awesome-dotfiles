@@ -264,7 +264,9 @@ globalkeys = gears.table.join(
 	awful.key({ modkey,           }, "e", function () awful.spawn("thunar") end,
               {description = "open Thunar File Browser", group = "launcher"}),
 	-- rofi
-	awful.key({ "Mod1" }, " ", function () awful.spawn("rofi -show run") end,
+	awful.key({ "Mod1" }, "space", function () awful.spawn("rofi -show run") end,
+              {description = "open Rofi", group = "launcher"}),
+	awful.key({ modkey,           }, "Escape", function () awful.spawn("xscreensaver-command -lock") end,
               {description = "open Rofi", group = "launcher"}),
 
 
@@ -275,8 +277,8 @@ globalkeys = gears.table.join(
               {description = "view previous", group = "tag"}),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
               {description = "view next", group = "tag"}),
-    awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
-              {description = "go back", group = "tag"}),
+    -- awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
+    --           {description = "go back", group = "tag"}),
 
     awful.key({ modkey,           }, "j",
         function ()

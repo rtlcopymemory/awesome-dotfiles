@@ -12,6 +12,7 @@
 - Arc icons
 - Alacritty
 - zsh/ohmyzsh
+- xscreensaver
 
 ### Credits
 - For the volume widget: https://github.com/streetturtle/awesome-wm-widgets/tree/master/volumebar-widget
