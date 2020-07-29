@@ -269,6 +269,8 @@ globalkeys = gears.table.join(
 	-- lockscreen
 	awful.key({ modkey,           }, "Escape", function () awful.spawn("xscreensaver-command -lock") end,
               {description = "Locks the screen", group = "awesome"}),
+	awful.key({ }, "Print", function () awful.spawn("flameshot gui") end,
+              {description = "Screenshot utility", group = "launcher"}),
 
 
 	-- defaults
