@@ -266,8 +266,9 @@ globalkeys = gears.table.join(
 	-- rofi
 	awful.key({ "Mod1" }, "space", function () awful.spawn("rofi -show run") end,
               {description = "open Rofi", group = "launcher"}),
+	-- lockscreen
 	awful.key({ modkey,           }, "Escape", function () awful.spawn("xscreensaver-command -lock") end,
-              {description = "open Rofi", group = "launcher"}),
+              {description = "Locks the screen", group = "awesome"}),
 
 
 	-- defaults
