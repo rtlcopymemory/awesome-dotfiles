@@ -21,7 +21,7 @@
 
 ### Todo
 - ~~Use `alacritty` instead of `xfce4-terminal`~~
-- Rofi + Rofi shortcut
+- ~~Rofi + Rofi shortcut~~
 - ~~Battery indicator~~
 - ~~Brightness~~
 - lock screen
