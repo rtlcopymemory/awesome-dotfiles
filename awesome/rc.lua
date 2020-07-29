@@ -219,8 +219,11 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
+	    wibox.widget.textbox(" | "),
 	    BAT0,
+	    wibox.widget.textbox(" | "),
 	    brightness_widget(),
+	    wibox.widget.textbox(" | "),
 	    volumebar_widget({
                 main_color = '#af13f7',
 		mute_color = '#bafc97',
@@ -229,6 +232,7 @@ awful.screen.connect_for_each_screen(function(s)
 		-- bar's height = wibar's height minus 2x margins
 		margins = 8
 	    }),
+	    wibox.widget.textbox(" | "),
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
