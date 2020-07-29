@@ -1,5 +1,9 @@
 # Awesome Dotfiles
 ## Personal Dotfiles for AwesomeWM config
+
+<img style="text-align='center'" src="terminals.png" alt="" />
+<img style="text-align='center'" src="empty.png" alt="" />
+
 ### Dependencies
 - awesomewm 4 (or later)
 - picom
