@@ -14,6 +14,7 @@
 - zsh/ohmyzsh
 - xscreensaver
 - flameshot
+- powerline-fonts
 
 ### Credits
 - For the volume widget: https://github.com/streetturtle/awesome-wm-widgets/tree/master/volumebar-widget
