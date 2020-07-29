@@ -258,6 +258,15 @@ globalkeys = gears.table.join(
 	-- brightness
 	awful.key({ }, "XF86MonBrightnessUp", function () awful.spawn("light -A 5") end, {description = "increase brightness", group = "custom"}),
 	awful.key({ }, "XF86MonBrightnessDown", function () awful.spawn("light -U 5") end, {description = "decrease brightness", group = "custom"}),
+	-- launch
+	awful.key({ modkey,           }, "b", function () awful.spawn("brave-nightly") end,
+              {description = "open Brave nightly", group = "launcher"}),
+	awful.key({ modkey,           }, "e", function () awful.spawn("thunar") end,
+              {description = "open Thunar File Browser", group = "launcher"}),
+	-- rofi
+	awful.key({ "Mod1" }, " ", function () awful.spawn("rofi -show run") end,
+              {description = "open Rofi", group = "launcher"}),
+
 
 	-- defaults
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
