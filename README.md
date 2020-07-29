@@ -11,6 +11,7 @@
 - deficient battery widget
 - Arc icons
 - Alacritty
+- zsh/ohmyzsh
 
 ### Credits
 - For the volume widget: https://github.com/streetturtle/awesome-wm-widgets/tree/master/volumebar-widget
