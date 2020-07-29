@@ -20,9 +20,3 @@
 - For the battery widget: https://github.com/deficient/battery-widget
 - Arc icons: https://github.com/horst3180/arc-icon-theme
 
-### Todo
-- ~~Use `alacritty` instead of `xfce4-terminal`~~
-- ~~Rofi + Rofi shortcut~~
-- ~~Battery indicator~~
-- ~~Brightness~~
-- lock screen
