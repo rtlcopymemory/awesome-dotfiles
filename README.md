@@ -32,5 +32,23 @@ The Drive folder is synced to `~/Keepass`.
 Commands to prepare `rclone`:
 ```sh
 rclone config
+n
+google-drive
+13  # Check this one, its the Google Drive "drive" option
+Press Enter until it opens the browser
+Enter
+Enter
+q
 ```
+
+Copy (or create a link in this case) the scripts to the folder and add it to PATH:
+```
+ln -s ~/git/awesome-dotfiles/local/bin/* ~/.local/bin
+```
+
+In case `echo $PATH` does not include `$HOME/.local/bin` run:
+```sh
+echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.zshrc
+```
+(Script above is for **zsh** only)
 
