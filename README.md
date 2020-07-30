@@ -26,3 +26,11 @@
 - For the battery widget: https://github.com/deficient/battery-widget
 - Arc icons: https://github.com/horst3180/arc-icon-theme
 
+### Extra
+I also have a synced folder on Google Drive to keep my KeePass database. For that I use `rclone` to sync the files, the script for "pulling" or "pushing" the changes is usually located in `~/.local/bin` and is included in the repo ander the `local/bin` folder.  
+The Drive folder is synced to `~/Keepass`.  
+Commands to prepare `rclone`:
+```sh
+rclone config
+```
+
