@@ -550,6 +550,12 @@ awful.rules.rules = {
 	{ rule = { class = "Alacritty" },
     		properties = { screen = 1, tag = "Term" }
 	},
+	{ rule = { class = "Code - Insiders" },
+		properties = { screen = 1, tag = "Edit" }
+	},
+	{ rule = { class = "Code" },
+		properties = { screen = 1, tag = "Edit" }
+	},
 
 }
 -- }}}
