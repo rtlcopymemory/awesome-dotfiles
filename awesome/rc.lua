@@ -557,6 +557,9 @@ awful.rules.rules = {
 	{ rule = { class = "Code" },
 		properties = { screen = 1, tag = "Edit" }
 	},
+	{ rule = { class = "jetbrains-pycharm" },
+		properties = { screen = 1, tag = "Edit" }
+	},
 
 }
 -- }}}
