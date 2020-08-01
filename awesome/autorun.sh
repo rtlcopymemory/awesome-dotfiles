@@ -9,4 +9,3 @@ function run {
 
 # Add "run <program> <arguments>" for autostart
 run picom -b  # compton => picom | compositor
-run xscreensaver -no-splash  # Screensaver and lock
