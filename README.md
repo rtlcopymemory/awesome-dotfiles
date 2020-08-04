@@ -19,6 +19,7 @@
 - xscreensaver
 - flameshot
 - powerline-fonts
+- rofi
 
 ### Credits
 - For the volume widget: https://github.com/streetturtle/awesome-wm-widgets/tree/master/volumebar-widget
